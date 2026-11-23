@@ -1,0 +1,28 @@
+/*
+ * Pointer to an Integer Variable
+ * Declare a pointer, initialize it with the address of an integer variable,
+ * and display the value and address of the variable using both the
+ * variable and the pointer.
+ */
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    int *ptr;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    ptr = &num;
+
+    printf("\nUsing Variable:\n");
+    printf("Value of variable = %d\n", num);
+    printf("Address of variable = %p\n", (void *)&num);
+
+    printf("\nUsing Pointer:\n");
+    printf("Value using pointer = %d\n", *ptr);
+    printf("Address using pointer = %p\n", (void *)ptr);
+
+    return 0;
+}

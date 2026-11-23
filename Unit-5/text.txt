@@ -1,0 +1,3 @@
+C is a programming language.
+Pointers are used to access memory.
+Files are used to store data.
